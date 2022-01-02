@@ -4,7 +4,6 @@ from LoginGUI import signin
 from VoiceSystem import voice_signup
 from tkinter import ttk, messagebox
 import sqlite3
-import cx_Oracle
 
 
 def call_signup():
@@ -135,22 +134,11 @@ def call_signup():
                     messagebox.showinfo("Successfull","Thank you!!! for signup", parent=self.root)
                     self.data_file()
                     self.clear()
-                    self.enterdata_oracle()
                     signin()
                 except Exception as es:
                    messagebox.showerror("Error", f"Error due to {str(es)}", parent=self.root)
 
-        def enterdata_oracle(self):
-            try:
-                conn = cx_Oracle.connect("system/qw12er34ty56@//localhost:1521/orcl.168.0.102")
-                cur = conn.cursor()
-                oracle = "INSERT INTO UserData VALUES ('" + self.firstname_box.get() + "','" + self.lastname_box.get() + "','" + self.email_box.get() + "','" + self.age_box.get() + "','" + str(self.pass_box.get()) + "')"
-                cur.execute(oracle)
-                conn.commit()
-                conn.close()
-            except Exception as es:
-                pass
-                #messagebox.showerror("Error", f"Error due to {str(es)}", parent=self.root)
+
 
     root = Toplevel()
     obj = gui_signup(root)
