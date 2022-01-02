@@ -1,8 +1,8 @@
 from tkinter import *
 from PIL import ImageTk, Image
-from Final_Project.foodmenu_GUI import call_menu
+from FoodMenuGUI import call_menu
 from VoiceSystem import voice_system
-from Final_Project.aboutus_gui import call_aboutus
+from AboutusGUI import call_aboutus
 
 
 def call_system():
