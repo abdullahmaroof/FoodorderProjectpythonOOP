@@ -5,7 +5,6 @@ from BillData import *
 from tkinter import messagebox
 from VoiceSystem import voice_bill
 import sqlite3
-from Final_Project.Billdata_inoracle import bill
 
 def call_burgermenu():
 
@@ -213,7 +212,6 @@ def call_burgermenu():
                 messagebox.showinfo("Order", "\t\tBill # " + str(
                     self.billno) + "       \n  Food: " + self.food + "\n  Flavour: " + self.flavour + "\n  Serve with: " + self.serve + "\n  Price " + str(
                     self.price) + "\n  " + self.message, parent=self.root)
-                bill(str(self.billno), self.food, self.flavour, self.serve, self.price)
             except Exception as es:
                 messagebox.showerror("Error", f"Error due to {str(es)}", parent=self.root)
 
@@ -236,7 +234,6 @@ def call_burgermenu():
                 messagebox.showinfo("Order", "\t\tBill # " + str(
                     self.billno) + "       \n  Food: " + self.food + "\n  Flavour: " + self.flavour + "\n  Serve with: " + self.serve + "\n  Price " + str(
                     self.price) + "\n  " + self.message, parent=self.root)
-                bill(str(self.billno), self.food, self.flavour, self.serve, self.price)
             except Exception as es:
                 messagebox.showerror("Error", f"Error due to {str(es)}", parent=self.root)
 
@@ -259,7 +256,6 @@ def call_burgermenu():
                 messagebox.showinfo("Order", "\t\tBill # " + str(
                     self.billno) + "       \n  Food: " + self.food + "\n  Flavour: " + self.flavour + "\n  Serve with: " + self.serve + "\n  Price " + str(
                     self.price) + "\n  " + self.message, parent=self.root)
-                bill(str(self.billno), self.food, self.flavour, self.serve, self.price)
             except Exception as es:
                 messagebox.showerror("Error", f"Error due to {str(es)}", parent=self.root)
 
@@ -282,7 +278,6 @@ def call_burgermenu():
                 messagebox.showinfo("Order", "\t\tBill # " + str(
                     self.billno) + "       \n  Food: " + self.food + "\n  Flavour: " + self.flavour + "\n  Serve with: " + self.serve + "\n  Price " + str(
                     self.price) + "\n  " + self.message, parent=self.root)
-                bill(str(self.billno), self.food, self.flavour, self.serve, self.price)
             except Exception as es:
                 messagebox.showerror("Error", f"Error due to {str(es)}", parent=self.root)
 
@@ -305,7 +300,6 @@ def call_burgermenu():
                 messagebox.showinfo("Order", "\t\tBill # " + str(
                     self.billno) + "       \n  Food: " + self.food + "\n  Flavour: " + self.flavour + "\n  Serve with: " + self.serve + "\n  Price " + str(
                     self.price) + "\n  " + self.message, parent=self.root)
-                bill(str(self.billno), self.food, self.flavour, self.serve, self.price)
             except Exception as es:
                 messagebox.showerror("Error", f"Error due to {str(es)}", parent=self.root)
 
@@ -328,7 +322,6 @@ def call_burgermenu():
                 messagebox.showinfo("Order", "\t\tBill # " + str(
                     self.billno) + "       \n  Food: " + self.food + "\n  Flavour: " + self.flavour + "\n  Serve with: " + self.serve + "\n  Price " + str(
                     self.price) + "\n  " + self.message, parent=self.root)
-                bill(str(self.billno), self.food, self.flavour, self.serve, self.price)
             except Exception as es:
                 messagebox.showerror("Error", f"Error due to {str(es)}", parent=self.root)
 
@@ -353,7 +346,6 @@ def call_burgermenu():
                 messagebox.showinfo("Order", "\t\tBill # " + str(
                     self.billno) + "       \n  Food: " + self.food + "\n  Flavour: " + self.flavour + "\n  Serve with: " + self.serve + "\n  Price " + str(
                     self.price) + "\n  " + self.message, parent=self.root)
-                bill(str(self.billno), self.food, self.flavour, self.serve, self.price)
             except Exception as es:
                 messagebox.showerror("Error", f"Error due to {str(es)}", parent=self.root)
 
@@ -378,7 +370,6 @@ def call_burgermenu():
                 messagebox.showinfo("Order", "\t\tBill # " + str(
                     self.billno) + "       \n  Food: " + self.food + "\n  Flavour: " + self.flavour + "\n  Serve with: " + self.serve + "\n  Price " + str(
                     self.price) + "\n  " + self.message, parent=self.root)
-                bill(str(self.billno), self.food, self.flavour, self.serve, self.price)
             except Exception as es:
                 messagebox.showerror("Error", f"Error due to {str(es)}", parent=self.root)
 
@@ -403,7 +394,6 @@ def call_burgermenu():
                 messagebox.showinfo("Order", "\t\tBill # " + str(
                     self.billno) + "       \n  Food: " + self.food + "\n  Flavour: " + self.flavour + "\n  Serve with: " + self.serve + "\n  Price " + str(
                     self.price) + "\n  " + self.message, parent=self.root)
-                bill(str(self.billno), self.food, self.flavour, self.serve, self.price)
             except Exception as es:
                 messagebox.showerror("Error", f"Error due to {str(es)}", parent=self.root)
 
@@ -428,7 +418,6 @@ def call_burgermenu():
                 messagebox.showinfo("Order", "\t\tBill # " + str(
                     self.billno) + "       \n  Food: " + self.food + "\n  Flavour: " + self.flavour + "\n  Serve with: " + self.serve + "\n  Price " + str(
                     self.price) + "\n  " + self.message, parent=self.root)
-                bill(str(self.billno), self.food, self.flavour, self.serve, self.price)
             except Exception as es:
                 messagebox.showerror("Error", f"Error due to {str(es)}", parent=self.root)
 
@@ -453,7 +442,6 @@ def call_burgermenu():
                 messagebox.showinfo("Order", "\t\tBill # " + str(
                     self.billno) + "       \n  Food: " + self.food + "\n  Flavour: " + self.flavour + "\n  Serve with: " + self.serve + "\n  Price " + str(
                     self.price) + "\n  " + self.message, parent=self.root)
-                bill(str(self.billno), self.food, self.flavour, self.serve, self.price)
             except Exception as es:
                 messagebox.showerror("Error", f"Error due to {str(es)}", parent=self.root)
 
@@ -478,7 +466,6 @@ def call_burgermenu():
                 messagebox.showinfo("Order", "\t\tBill # " + str(
                     self.billno) + "       \n  Food: " + self.food + "\n  Flavour: " + self.flavour + "\n  Serve with: " + self.serve + "\n  Price " + str(
                     self.price) + "\n  " + self.message, parent=self.root)
-                bill(str(self.billno), self.food, self.flavour, self.serve, self.price)
             except Exception as es:
                 messagebox.showerror("Error", f"Error due to {str(es)}", parent=self.root)
 
@@ -503,7 +490,6 @@ def call_burgermenu():
                 messagebox.showinfo("Order", "\t\tBill # " + str(
                     self.billno) + "       \n  Food: " + self.food + "\n  Flavour: " + self.flavour + "\n  Serve with: " + self.serve + "\n  Price " + str(
                     self.price) + "\n  " + self.message, parent=self.root)
-                bill(str(self.billno), self.food, self.flavour, self.serve, self.price)
             except Exception as es:
                 messagebox.showerror("Error", f"Error due to {str(es)}", parent=self.root)
 
@@ -528,7 +514,6 @@ def call_burgermenu():
                 messagebox.showinfo("Order", "\t\tBill # " + str(
                     self.billno) + "       \n  Food: " + self.food + "\n  Flavour: " + self.flavour + "\n  Serve with: " + self.serve + "\n  Price " + str(
                     self.price) + "\n  " + self.message, parent=self.root)
-                bill(str(self.billno), self.food, self.flavour, self.serve, self.price)
             except Exception as es:
                 messagebox.showerror("Error", f"Error due to {str(es)}", parent=self.root)
 
@@ -553,7 +538,6 @@ def call_burgermenu():
                 messagebox.showinfo("Order", "\t\tBill # " + str(
                     self.billno) + "       \n  Food: " + self.food + "\n  Flavour: " + self.flavour + "\n  Serve with: " + self.serve + "\n  Price " + str(
                     self.price) + "\n  " + self.message, parent=self.root)
-                bill(str(self.billno), self.food, self.flavour, self.serve, self.price)
             except Exception as es:
                 messagebox.showerror("Error", f"Error due to {str(es)}", parent=self.root)
 
