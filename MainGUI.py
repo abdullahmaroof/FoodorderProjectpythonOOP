@@ -1,8 +1,8 @@
 from tkinter import *
 from PIL import ImageTk, Image
 from LoginGUI import signin
-from Final_Project.Signup_GUI import call_signup
-from Final_Project.admin_login_GUI import call_adminlogin
+from SignupGUI import call_signup
+from AdminLoginGUI import call_adminlogin
 from Final_Project.voice_system import call_voice
 
 
