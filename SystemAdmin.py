@@ -1,7 +1,7 @@
 from tkinter import *
 from PIL import ImageTk, Image
-from Final_Project.voice_system import voice_admin
-from Final_Project.Menu_Report import excelMENUReportGeneration
+from VoiceSystem import voice_admin
+from MenuReport import excelMENUReportGeneration
 from Final_Project.User_Report import excelUSERReportGeneration
 from Final_Project.Bill_report import excelbillReportGeneration
 #from Final_Project.excel_oracle import exceloracleReportGeneration

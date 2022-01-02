@@ -1,7 +1,7 @@
 from tkinter import *
 from PIL import ImageTk, Image
-from Final_Project.systemmain_GUI import call_system
-from Final_Project.voice_system import call_login
+from SystemMainGUI import call_system
+from VoiceSystem import call_login
 from tkinter import messagebox
 from sqlite3 import *
 

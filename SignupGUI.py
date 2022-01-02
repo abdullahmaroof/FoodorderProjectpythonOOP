@@ -1,7 +1,7 @@
 from tkinter import *
 from PIL import ImageTk, Image
 from LoginGUI import signin
-from Final_Project.voice_system import voice_signup
+from VoiceSystem import voice_signup
 from tkinter import ttk, messagebox
 import sqlite3
 import cx_Oracle
