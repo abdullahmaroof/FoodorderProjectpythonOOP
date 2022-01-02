@@ -3,9 +3,9 @@ from PIL import ImageTk, Image
 from VoiceSystem import voice_paratharoll
 from tkinter import messagebox
 from VoiceSystem import voice_bill
-import sqlite3
+from sqlite3 import *
 from BillData import *
-from Final_Project.Billdata_inoracle import bill
+
 
 def call_parathamenu():
     class call_paratharoll:
@@ -212,7 +212,6 @@ def call_parathamenu():
                 messagebox.showinfo("Order", "\t\tBill # " + str(
                     self.billno) + "       \n  Food: " + self.food + "\n  Flavour: " + self.flavour + "\n  Serve with: " + self.serve + "\n  Price " + str(
                     self.price) + "\n  " + self.message, parent=self.root)
-                bill(str(self.billno), self.food, self.flavour, self.serve, self.price)
             except Exception as es:
                 messagebox.showerror("Error", f"Error due to {str(es)}", parent=self.root)
 
@@ -235,7 +234,6 @@ def call_parathamenu():
                 messagebox.showinfo("Order", "\t\tBill # " + str(
                     self.billno) + "       \n  Food: " + self.food + "\n  Flavour: " + self.flavour + "\n  Serve with: " + self.serve + "\n  Price " + str(
                     self.price) + "\n  " + self.message, parent=self.root)
-                bill(str(self.billno), self.food, self.flavour, self.serve, self.price)
             except Exception as es:
                 messagebox.showerror("Error", f"Error due to {str(es)}", parent=self.root)
 
@@ -258,7 +256,6 @@ def call_parathamenu():
                 messagebox.showinfo("Order", "\t\tBill # " + str(
                     self.billno) + "       \n  Food: " + self.food + "\n  Flavour: " + self.flavour + "\n  Serve with: " + self.serve + "\n  Price " + str(
                     self.price) + "\n  " + self.message, parent=self.root)
-                bill(str(self.billno), self.food, self.flavour, self.serve, self.price)
             except Exception as es:
                 messagebox.showerror("Error", f"Error due to {str(es)}", parent=self.root)
 
@@ -281,7 +278,6 @@ def call_parathamenu():
                 messagebox.showinfo("Order", "\t\tBill # " + str(
                     self.billno) + "       \n  Food: " + self.food + "\n  Flavour: " + self.flavour + "\n  Serve with: " + self.serve + "\n  Price " + str(
                     self.price) + "\n  " + self.message, parent=self.root)
-                bill(str(self.billno), self.food, self.flavour, self.serve, self.price)
             except Exception as es:
                 messagebox.showerror("Error", f"Error due to {str(es)}", parent=self.root)
 
@@ -304,7 +300,6 @@ def call_parathamenu():
                 messagebox.showinfo("Order", "\t\tBill # " + str(
                     self.billno) + "       \n  Food: " + self.food + "\n  Flavour: " + self.flavour + "\n  Serve with: " + self.serve + "\n  Price " + str(
                     self.price) + "\n  " + self.message, parent=self.root)
-                bill(str(self.billno), self.food, self.flavour, self.serve, self.price)
             except Exception as es:
                 messagebox.showerror("Error", f"Error due to {str(es)}", parent=self.root)
 
@@ -318,7 +313,7 @@ def call_parathamenu():
             self.message = self.data.note
             voice_bill.wishme()
             try:
-                con = sqlite3.connect("BillRecord.db")
+                con = connect("BillRecord.db")
                 cursor = con.cursor()
                 sql = "INSERT INTO bill VALUES ('" + str(self.billno) + "','" + self.food + "','" + self.flavour + "','" + self.serve + "','" + str(self.price) + "')"
                 cursor.execute(sql)
@@ -327,7 +322,6 @@ def call_parathamenu():
                 messagebox.showinfo("Order", "\t\tBill # " + str(
                     self.billno) + "       \n  Food: " + self.food + "\n  Flavour: " + self.flavour + "\n  Serve with: " + self.serve + "\n  Price " + str(
                     self.price) + "\n  " + self.message, parent=self.root)
-                bill(str(self.billno), self.food, self.flavour, self.serve, self.price)
             except Exception as es:
                 messagebox.showerror("Error", f"Error due to {str(es)}", parent=self.root)
 
@@ -341,7 +335,7 @@ def call_parathamenu():
             self.message = self.data.note
             voice_bill.wishme()
             try:
-                con = sqlite3.connect("BillRecord.db")
+                con = connect("BillRecord.db")
                 cursor = con.cursor()
                 sql = "INSERT INTO bill VALUES ('" + str(
                     self.billno) + "','" + self.food + "','" + self.flavour + "','" + self.serve + "','" + str(
@@ -352,7 +346,6 @@ def call_parathamenu():
                 messagebox.showinfo("Order", "\t\tBill # " + str(
                     self.billno) + "       \n  Food: " + self.food + "\n  Flavour: " + self.flavour + "\n  Serve with: " + self.serve + "\n  Price " + str(
                     self.price) + "\n  " + self.message, parent=self.root)
-                bill(str(self.billno), self.food, self.flavour, self.serve, self.price)
             except Exception as es:
                 messagebox.showerror("Error", f"Error due to {str(es)}", parent=self.root)
 
@@ -366,7 +359,7 @@ def call_parathamenu():
             self.message = self.data.note
             voice_bill.wishme()
             try:
-                con = sqlite3.connect("BillRecord.db")
+                con = connect("BillRecord.db")
                 cursor = con.cursor()
                 sql = "INSERT INTO bill VALUES ('" + str(
                     self.billno) + "','" + self.food + "','" + self.flavour + "','" + self.serve + "','" + str(
@@ -377,7 +370,6 @@ def call_parathamenu():
                 messagebox.showinfo("Order", "\t\tBill # " + str(
                     self.billno) + "       \n  Food: " + self.food + "\n  Flavour: " + self.flavour + "\n  Serve with: " + self.serve + "\n  Price " + str(
                     self.price) + "\n  " + self.message, parent=self.root)
-                bill(str(self.billno), self.food, self.flavour, self.serve, self.price)
             except Exception as es:
                 messagebox.showerror("Error", f"Error due to {str(es)}", parent=self.root)
 
@@ -391,7 +383,7 @@ def call_parathamenu():
             self.message = self.data.note
             voice_bill.wishme()
             try:
-                con = sqlite3.connect("BillRecord.db")
+                con = connect("BillRecord.db")
                 cursor = con.cursor()
                 sql = "INSERT INTO bill VALUES ('" + str(
                     self.billno) + "','" + self.food + "','" + self.flavour + "','" + self.serve + "','" + str(
@@ -402,7 +394,6 @@ def call_parathamenu():
                 messagebox.showinfo("Order", "\t\tBill # " + str(
                     self.billno) + "       \n  Food: " + self.food + "\n  Flavour: " + self.flavour + "\n  Serve with: " + self.serve + "\n  Price " + str(
                     self.price) + "\n  " + self.message, parent=self.root)
-                bill(str(self.billno), self.food, self.flavour, self.serve, self.price)
             except Exception as es:
                 messagebox.showerror("Error", f"Error due to {str(es)}", parent=self.root)
 
@@ -416,7 +407,7 @@ def call_parathamenu():
             self.message = self.data.note
             voice_bill.wishme()
             try:
-                con = sqlite3.connect("BillRecord.db")
+                con = connect("BillRecord.db")
                 cursor = con.cursor()
                 sql = "INSERT INTO bill VALUES ('" + str(
                     self.billno) + "','" + self.food + "','" + self.flavour + "','" + self.serve + "','" + str(
@@ -427,7 +418,6 @@ def call_parathamenu():
                 messagebox.showinfo("Order", "\t\tBill # " + str(
                     self.billno) + "       \n  Food: " + self.food + "\n  Flavour: " + self.flavour + "\n  Serve with: " + self.serve + "\n  Price " + str(
                     self.price) + "\n  " + self.message, parent=self.root)
-                bill(str(self.billno), self.food, self.flavour, self.serve, self.price)
             except Exception as es:
                 messagebox.showerror("Error", f"Error due to {str(es)}", parent=self.root)
 
@@ -441,7 +431,7 @@ def call_parathamenu():
             self.message = self.data.note
             voice_bill.wishme()
             try:
-                con = sqlite3.connect("BillRecord.db")
+                con = connect("BillRecord.db")
                 cursor = con.cursor()
                 sql = "INSERT INTO bill VALUES ('" + str(
                     self.billno) + "','" + self.food + "','" + self.flavour + "','" + self.serve + "','" + str(
@@ -452,7 +442,6 @@ def call_parathamenu():
                 messagebox.showinfo("Order", "\t\tBill # " + str(
                     self.billno) + "       \n  Food: " + self.food + "\n  Flavour: " + self.flavour + "\n  Serve with: " + self.serve + "\n  Price " + str(
                     self.price) + "\n  " + self.message, parent=self.root)
-                bill(str(self.billno), self.food, self.flavour, self.serve, self.price)
             except Exception as es:
                 messagebox.showerror("Error", f"Error due to {str(es)}", parent=self.root)
 
@@ -466,7 +455,7 @@ def call_parathamenu():
             self.message = self.data.note
             voice_bill.wishme()
             try:
-                con = sqlite3.connect("BillRecord.db")
+                con = connect("BillRecord.db")
                 cursor = con.cursor()
                 sql = "INSERT INTO bill VALUES ('" + str(
                     self.billno) + "','" + self.food + "','" + self.flavour + "','" + self.serve + "','" + str(
@@ -477,7 +466,6 @@ def call_parathamenu():
                 messagebox.showinfo("Order", "\t\tBill # " + str(
                     self.billno) + "       \n  Food: " + self.food + "\n  Flavour: " + self.flavour + "\n  Serve with: " + self.serve + "\n  Price " + str(
                     self.price) + "\n  " + self.message, parent=self.root)
-                bill(str(self.billno), self.food, self.flavour, self.serve, self.price)
             except Exception as es:
                 messagebox.showerror("Error", f"Error due to {str(es)}", parent=self.root)
 
@@ -491,7 +479,7 @@ def call_parathamenu():
             self.message = self.data.note
             voice_bill.wishme()
             try:
-                con = sqlite3.connect("BillRecord.db")
+                con = connect("BillRecord.db")
                 cursor = con.cursor()
                 sql = "INSERT INTO bill VALUES ('" + str(
                     self.billno) + "','" + self.food + "','" + self.flavour + "','" + self.serve + "','" + str(
@@ -502,7 +490,6 @@ def call_parathamenu():
                 messagebox.showinfo("Order", "\t\tBill # " + str(
                     self.billno) + "       \n  Food: " + self.food + "\n  Flavour: " + self.flavour + "\n  Serve with: " + self.serve + "\n  Price " + str(
                     self.price) + "\n  " + self.message, parent=self.root)
-                bill(str(self.billno), self.food, self.flavour, self.serve, self.price)
             except Exception as es:
                 messagebox.showerror("Error", f"Error due to {str(es)}", parent=self.root)
 
@@ -516,7 +503,7 @@ def call_parathamenu():
             self.message = self.data.note
             voice_bill.wishme()
             try:
-                con = sqlite3.connect("BillRecord.db")
+                con = connect("BillRecord.db")
                 cursor = con.cursor()
                 sql = "INSERT INTO bill VALUES ('" + str(
                     self.billno) + "','" + self.food + "','" + self.flavour + "','" + self.serve + "','" + str(
@@ -527,7 +514,6 @@ def call_parathamenu():
                 messagebox.showinfo("Order", "\t\tBill # " + str(
                     self.billno) + "       \n  Food: " + self.food + "\n  Flavour: " + self.flavour + "\n  Serve with: " + self.serve + "\n  Price " + str(
                     self.price) + "\n  " + self.message, parent=self.root)
-                bill(str(self.billno), self.food, self.flavour, self.serve, self.price)
             except Exception as es:
                 messagebox.showerror("Error", f"Error due to {str(es)}", parent=self.root)
 
@@ -541,7 +527,7 @@ def call_parathamenu():
             self.message = self.data.note
             voice_bill.wishme()
             try:
-                con = sqlite3.connect("BillRecord.db")
+                con = connect("BillRecord.db")
                 cursor = con.cursor()
                 sql = "INSERT INTO bill VALUES ('" + str(
                     self.billno) + "','" + self.food + "','" + self.flavour + "','" + self.serve + "','" + str(
@@ -552,7 +538,6 @@ def call_parathamenu():
                 messagebox.showinfo("Order", "\t\tBill # " + str(
                     self.billno) + "       \n  Food: " + self.food + "\n  Flavour: " + self.flavour + "\n  Serve with: " + self.serve + "\n  Price " + str(
                     self.price) + "\n  " + self.message, parent=self.root)
-                bill(str(self.billno), self.food, self.flavour, self.serve, self.price)
             except Exception as es:
                 messagebox.showerror("Error", f"Error due to {str(es)}", parent=self.root)
 
