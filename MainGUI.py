@@ -3,7 +3,7 @@ from PIL import ImageTk, Image
 from LoginGUI import signin
 from SignupGUI import call_signup
 from AdminLoginGUI import call_adminlogin
-from Final_Project.voice_system import call_voice
+from VoiceSystem import call_voice
 
 
 class main_system:

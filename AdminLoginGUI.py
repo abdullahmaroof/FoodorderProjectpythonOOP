@@ -1,7 +1,7 @@
 from tkinter import *
 from PIL import ImageTk, Image
-from Final_Project.voice_system import voice_loginadmin
-from Final_Project.system_admin import call_adminsys
+from VoiceSystem import voice_loginadmin
+from SystemAdmin import call_adminsys
 from tkinter import messagebox
 
 def call_adminlogin():
