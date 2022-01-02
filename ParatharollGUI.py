@@ -4,7 +4,7 @@ from VoiceSystem import voice_paratharoll
 from tkinter import messagebox
 from VoiceSystem import voice_bill
 import sqlite3
-from Final_Project.Bill_Data import *
+from BillData import *
 from Final_Project.Billdata_inoracle import bill
 
 def call_parathamenu():

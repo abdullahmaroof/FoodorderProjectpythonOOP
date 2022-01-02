@@ -2,7 +2,7 @@ from tkinter import *
 from PIL import ImageTk, Image
 from VoiceSystem import voice_pizza, voice_bill
 from tkinter import messagebox
-from Final_Project.Bill_Data import *
+from BillData import *
 import sqlite3
 from Final_Project.Billdata_inoracle import bill
 

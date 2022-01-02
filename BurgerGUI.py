@@ -1,9 +1,9 @@
 from tkinter import *
 from PIL import ImageTk, Image
-from Final_Project.voice_system import voice_burger
-from Final_Project.Bill_Data import *
+from VoiceSystem import voice_burger
+from BillData import *
 from tkinter import messagebox
-from Final_Project.voice_system import voice_bill
+from VoiceSystem import voice_bill
 import sqlite3
 from Final_Project.Billdata_inoracle import bill
 
