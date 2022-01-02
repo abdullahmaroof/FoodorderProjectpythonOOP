@@ -1,9 +1,9 @@
 from ParatharollGUI import call_parathamenu
-from Final_Project.pizza_GUI import call_pizzamenu
-from Final_Project.biryani_GUI import call_biryanimenu
+from PizzaGUI import call_pizzamenu
+from BiryaniGUI import call_biryanimenu
 from tkinter import *
 from PIL import ImageTk, Image
-from Final_Project.burger_gui import call_burgermenu
+from BurgerGUI import call_burgermenu
 from VoiceSystem import voice_menu
 
 def call_menu():
